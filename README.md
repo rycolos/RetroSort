@@ -60,7 +60,7 @@ Local roms should be stored in a single directory (like a `/downloads` folder). 
 
 Ensure your RetroSort.conf file has been updated and run the script:
 ```
-python3 RetroSort.conf
+python3 RetroSort.py
 ```
 
 ## Example Output
