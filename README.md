@@ -37,7 +37,7 @@ Host must appear in `known_hosts` in order to connect. If using hostname, host i
 
 ```
 #localdir is directory where roms are stored locally
-#remotedir is parent directory on RetroPie where roms are stored remotely (usually /home/pi/RetroPie/roms/)
+#remotedir is parent directory on RetroPie where roms are stored (usually /home/pi/RetroPie/roms/)
 #use full path, no ~. Targets must end with /
 
 [targets]
