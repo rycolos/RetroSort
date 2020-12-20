@@ -1,5 +1,5 @@
 # RetroSort
-A Python script to sort and transfer local rom files from a local machine to a RetroPie installation using SSH and SCP. 
+A Python script to sort and transfer rom files from a local machine to a RetroPie installation using SSH and SCP. 
 
 This was designed to work on a LAN, but should work remotely (be sure to implement SSH security best practices). 
 
