@@ -4,10 +4,10 @@ A Python script to sort and transfer rom files from a local machine to a RetroPi
 This was designed to work on a LAN, but should work remotely (be sure to implement SSH security best practices). 
 
 ## Caveats
-This script only works with roms that use unique extensions linked to the core systems in a stock RetroPie install. This script will not work with .bin, .cue, or other extensions that are used for multiple platforms. This script will not work with RetroPie add ons without modification. The script can be easily expanded by modifying the `emulatorTarget` dict. 
+This script only works with roms that use unique extensions linked to the core systems in a stock RetroPie install. This script will not work with .bin, .cue, or other extensions that are used for multiple platforms. This script will not work with RetroPie add ons without modification. The script can be easily expanded by modifying the `emulatorTarget` dict in `RetroSort.py`. 
 
 ## Requirements
-* [RetroPie](https://retropie.org.uk/docs/) installed on a Raspberry Pi with SSH enabled. This has only been tested on RetroPie 4.7 on a Raspberry Pi 3B.
+* [RetroPie](https://retropie.org.uk/docs/) installed on a Raspberry Pi with [SSH enabled](https://retropie.org.uk/docs/SSH/). This has only been tested on RetroPie 4.7 on a Raspberry Pi 3B.
 * Python 3 - this script has not been fully tested on Python 2
 * [Python pip](https://pip.pypa.io/en/stable/installing/)
 
