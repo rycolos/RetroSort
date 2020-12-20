@@ -32,7 +32,9 @@ pip install -r requirements.txt
 ```
 
 ## Configuration
-Remove `.template` from the `RetroSort.conf.template` config file and update per your local systems.
+Remove `.template` from the `RetroSort.conf.template` config file and update per your local and remote systems.
+Host must appear in `known_hosts` in order to connect. If using hostname, host is case sensitive to how it appears in `known_hosts`. 
+
 ```
 #localdir is directory where roms are stored locally
 #remotedir is parent directory on RetroPie where roms are stored remotely (usually /home/pi/RetroPie/roms/)
@@ -54,7 +56,7 @@ username =
 ```
 
 ## Usage
-Local roms should be stored in a single directory (like a /downloads folder). When the script runs, it will iterate through a dictionary of rom file extensions and the ~/RetroPie/roms/[system] folder that the extension is associated with. Files will be sorted and transferred to the correct folder on the RetroPie installation, depending on their extension. Local files will be moved to a `[date] transfers` directory for backup and to make it easier to see which files were not transferred (like .cue and .bin files that are not associated with a single system). 
+Local roms should be stored in a single directory (like a `/downloads` folder). When the script runs, it will iterate through a dictionary of rom file extensions and the `~/RetroPie/roms/[system]` folder that the extension is associated with. Files will be sorted and transferred to the correct folder on the RetroPie installation, depending on their extension. Local files will be moved to a `[date] transfers` directory for backup and to make it easier to see which files were not transferred (like .cue and .bin files that are not associated with a single system). 
 
 Ensure your RetroSort.conf file has been updated and run the script:
 ```
@@ -116,6 +118,7 @@ No *.szx files found.
 No *.z80 files found.
 
 Completed transfer of 10 files for 6 systems to /home/pi/RetroPie/retro
+Local files moved to /Users/Personal/RetroSort/Testing/2020-12-20 transfers
 ```
 
 
