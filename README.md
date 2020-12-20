@@ -4,7 +4,7 @@ A Python script to sort and transfer rom files from a local machine to a RetroPi
 This was designed to work on a LAN, but should work remotely (be sure to implement SSH security best practices). 
 
 ## Caveats
-This script only works with roms that use unique extensions linked to the core systems in a stock RetroPie install. This script will not work with .bin, .cue, or other extensions that are used for multiple platforms. This script will not work with RetroPie add ons without modification. The script can be easily expanded by modifying the `emulatorTarget` dict in `RetroSort.py`. 
+This script only works with roms that use unique extensions linked to the core systems in a stock RetroPie install. This script will not work with .bin, .cue, or other extensions that are used for multiple platforms. This script will not work with RetroPie add ons without modification. The script can be easily expanded by modifying the `emulatorTarget` dict in `RetroSort.py`. See "Compatible file extensions and systems" below.
 
 ## Requirements
 * [RetroPie](https://retropie.org.uk/docs/) installed on a Raspberry Pi with [SSH enabled](https://retropie.org.uk/docs/SSH/). This has only been tested on RetroPie 4.7 on a Raspberry Pi 3B.
@@ -120,6 +120,40 @@ No *.z80 files found.
 Completed transfer of 10 files for 6 systems to /home/pi/RetroPie/retro
 Local files moved to /Users/Personal/RetroSort/Testing/2020-12-20 transfers
 ```
+## Compatible file extensions and systems
+Modify this list in `RetroSort.py`.
+
+```
+	"*.cpc": "amstradcpc",
+	"*.a26": "atari2600",
+	"*.a52": "atari5200",
+	"*.a78": "atari7800",
+	"*.lnx": "atarilynx",
+	"*.gba": "gba",
+	"*.gg": "gamegear",
+	"*.gb": "gb",
+	"*.gbc": "gbc",
+	"*.sms": "mastersystem",
+	"*.ngp": "ngp",
+	"*.ngc": "ngpc",
+	"*.z64": "n64",
+	"*.n64": "n64",
+	"*.v64": "n64",
+	"*.nes": "nes",
+	"*.fds": "nes",
+	"*.pce": "pcengine",
+	"*.32x": "sega32x",
+	"*.sg": "sg-1000",
+	"*.smc": "snes",
+	"*.sfc": "snes",
+	"*.fig": "snes",
+	"*.swc": "snes",
+	"*.vec": "vectrex",
+	"*.gam": "vectrex",
+	"*.szx": "zxspectrum",
+	"*.z80": "zxspectrum"
+```
+
 ## Credits
 Major thanks to [RetroPie](https://github.com/RetroPie). This project is unaffilliated.
 
