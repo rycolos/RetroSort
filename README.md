@@ -120,5 +120,6 @@ No *.z80 files found.
 Completed transfer of 10 files for 6 systems to /home/pi/RetroPie/retro
 Local files moved to /Users/Personal/RetroSort/Testing/2020-12-20 transfers
 ```
-
+## Credits
+Major thanks to [RetroPie](https://github.com/RetroPie). This project is unaffilliated.
 
