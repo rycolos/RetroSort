@@ -137,3 +137,4 @@ print("\n")
 completion = ("Completed transfer of " + str(totalFileCount) + " files for " 
 	+ str(sysCount) + " systems to " + remotePath)
 print(completion)
+print("Local files moved to " + localBackupDir)

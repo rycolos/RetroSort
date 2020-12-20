@@ -1,12 +1,13 @@
-#localdir is parent directory where roms are stored
-#remotedir is parent directory on RetroPie where roms are stored (usually /home/pi/RetroPie/roms)
-#Use full address, no ~. Targets must end with /
+#localdir is directory where roms are stored locally
+#remotedir is parent directory on RetroPie where roms are stored remotely (usually /home/pi/RetroPie/roms/)
+#Use full path, no ~. Targets must end with /
 
 [targets]
 localdir = 
-remotedir = /home/pi/RetroPie/roms
+remotedir = /home/pi/RetroPie/roms/
 
 #choose either password or key. comment out whatever choice is unused 
+#keyfile is location of private ssh key. usually in user/.ssh folder. use full path, no ~
 
 [ssh]
 host = xxx.xxx.xxx.xxx
